@@ -1,0 +1,4 @@
+train: D:\Helper\MLBazyak\homework\06_01\price_detection\data\train
+val: D:\Helper\MLBazyak\homework\06_01\price_detection\data\valid
+nc: 4  
+names: ['name_tag', 'last_price_tag', 'price_tag', 'discount_tag']  
