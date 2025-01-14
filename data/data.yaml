@@ -1,0 +1,13 @@
+train: ../train/images
+val: ../valid/images
+test: ../test/images
+
+nc: 4
+names: ['name', 'old_price', 'price', 'promotion']
+
+roboflow:
+  workspace: project-xjsry
+  project: -mxpf6
+  version: 1
+  license: CC BY 4.0
+  url: https://universe.roboflow.com/project-xjsry/-mxpf6/dataset/1
