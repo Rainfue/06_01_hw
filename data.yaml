@@ -21,4 +21,4 @@ rect: True
 patience: 5
 
 nc: 1
-names: ['price_tag']  
+names: ['price']  
