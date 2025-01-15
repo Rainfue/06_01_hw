@@ -65,6 +65,7 @@
 ## **Авторы**
 - Зотеев А.А.
 - alzotey@mail.ru
+- [телеграмм](https://t.me/Wab_aqua_silente_caveW)
 
 ---
 
