@@ -16,7 +16,7 @@
         ├── test_cases/
         ├── classes.txt
         └── data.yaml
-        
+
     └── requirements.txt  
     └── yolov8n.pt
     └── yolov8s.pt
@@ -24,4 +24,4 @@
     
 **Структура данных в модуле**
 
-*Используемые библиотеки описаны в файле r`06_01_hw\requirements.txt`*
+*Используемые библиотеки описаны в файле `06_01_hw\requirements.txt`*
