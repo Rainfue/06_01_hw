@@ -1,0 +1,710 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>865fafd120ea4b4fbd52902131d7077d</title>
+  <style>
+    html {
+      line-height: 1.5;
+      font-family: Georgia, serif;
+      font-size: 20px;
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 1em;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, 'Lucida Console', Consolas, monospace;
+      font-size: 85%;
+      margin: 0;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      background-color: #1a1a1a;
+      border: none;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    pre > code.sourceCode { white-space: pre; position: relative; }
+    pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+    pre > code.sourceCode > span:empty { height: 1.2em; }
+    .sourceCode { overflow: visible; }
+    code.sourceCode > span { color: inherit; text-decoration: inherit; }
+    div.sourceCode { margin: 1em 0; }
+    pre.sourceCode { margin: 0; }
+    @media screen {
+    div.sourceCode { overflow: auto; }
+    }
+    @media print {
+    pre > code.sourceCode { white-space: pre-wrap; }
+    pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+    }
+    pre.numberSource code
+      { counter-reset: source-line 0; }
+    pre.numberSource code > span
+      { position: relative; left: -4em; counter-increment: source-line; }
+    pre.numberSource code > span > a:first-child::before
+      { content: counter(source-line);
+        position: relative; left: -1em; text-align: right; vertical-align: baseline;
+        border: none; display: inline-block;
+        -webkit-touch-callout: none; -webkit-user-select: none;
+        -khtml-user-select: none; -moz-user-select: none;
+        -ms-user-select: none; user-select: none;
+        padding: 0 4px; width: 4em;
+        color: #aaaaaa;
+      }
+    pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+    div.sourceCode
+      {   }
+    @media screen {
+    pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+    }
+    code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+    code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+    code span.at { color: #7d9029; } /* Attribute */
+    code span.bn { color: #40a070; } /* BaseN */
+    code span.bu { color: #008000; } /* BuiltIn */
+    code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+    code span.ch { color: #4070a0; } /* Char */
+    code span.cn { color: #880000; } /* Constant */
+    code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+    code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+    code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+    code span.dt { color: #902000; } /* DataType */
+    code span.dv { color: #40a070; } /* DecVal */
+    code span.er { color: #ff0000; font-weight: bold; } /* Error */
+    code span.ex { } /* Extension */
+    code span.fl { color: #40a070; } /* Float */
+    code span.fu { color: #06287e; } /* Function */
+    code span.im { color: #008000; font-weight: bold; } /* Import */
+    code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+    code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+    code span.op { color: #666666; } /* Operator */
+    code span.ot { color: #007020; } /* Other */
+    code span.pp { color: #bc7a00; } /* Preprocessor */
+    code span.sc { color: #4070a0; } /* SpecialChar */
+    code span.ss { color: #bb6688; } /* SpecialString */
+    code span.st { color: #4070a0; } /* String */
+    code span.va { color: #19177c; } /* Variable */
+    code span.vs { color: #4070a0; } /* VerbatimString */
+    code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<section id="21-тест-кейсы" class="cell markdown">
+<h1>2.1 Тест-кейсы</h1>
+</section>
+<div class="cell markdown">
+<p><strong>В процессе этого задания, я протестирую финальный алгоритм на
+7 тестовых наборах, и оценю результат</strong></p>
+</div>
+<section id="импортирование-библиотек" class="cell markdown">
+<h3>Импортирование библиотек</h3>
+</section>
+<div class="cell code" data-execution_count="11">
+<div class="sourceCode" id="cb1"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># библиотека с предобученной моделью YOLO</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> ultralytics <span class="im">import</span> YOLO</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="co"># библиотека для работы с регулярными выражениями</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> re</span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="co"># библиотеки для работы с изображениями</span></span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> cv2</span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> PIL <span class="im">import</span> Image</span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a><span class="co"># библиотека с OCR моделью</span></span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> easyocr</span></code></pre></div>
+</div>
+<div class="cell markdown">
+<p><strong>Инициализирую все нужные модели</strong></p>
+</div>
+<div class="cell code" data-execution_count="12">
+<div class="sourceCode" id="cb2"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co"># модель для детекции ценника из прошлого модуля</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>model <span class="op">=</span> YOLO(<span class="vs">r&#39;D:\Helper\MLBazyak\homework\06_01\06_01_hw\runs\detect\price_detection_v42\weights\best.pt&#39;</span>)</span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a><span class="co"># OCR модель для распознавания цены</span></span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>ocr <span class="op">=</span> easyocr.Reader([<span class="st">&#39;en&#39;</span>])</span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a><span class="co"># предопределенная картинка для функции</span></span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a>img <span class="op">=</span> <span class="vs">r&#39;D:\Helper\MLBazyak\homework\06_01\06_01_hw\hih\31.jpg&#39;</span></span></code></pre></div>
+<div class="output stream stderr">
+<pre><code>Neither CUDA nor MPS are available - defaulting to CPU. Note: This module is much faster with a GPU.
+</code></pre>
+</div>
+</div>
+<div class="cell code" data-execution_count="13">
+<div class="sourceCode" id="cb4"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> rec_price(det_model: YOLO <span class="op">=</span> model, </span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>              ocr: easyocr.Reader <span class="op">=</span> ocr, </span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>              img_dir: <span class="bu">str</span> <span class="op">=</span> img):</span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a>    <span class="co">&#39;&#39;&#39;</span></span>
+<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a><span class="co">        Процедура для обнаружения и распознавания цен на изображении.</span></span>
+<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a><span class="co">    Args:</span></span>
+<span id="cb4-9"><a href="#cb4-9" aria-hidden="true" tabindex="-1"></a><span class="co">        - det_model (YOLO): Модель YOLO для обнаружения bounding box&#39;ов цен.</span></span>
+<span id="cb4-10"><a href="#cb4-10" aria-hidden="true" tabindex="-1"></a><span class="co">        - ocr (easyocr.Reader): Модель OCR для распознавания текста.</span></span>
+<span id="cb4-11"><a href="#cb4-11" aria-hidden="true" tabindex="-1"></a><span class="co">        - img_dir (str): Путь к изображению, на котором нужно найти цену.</span></span>
+<span id="cb4-12"><a href="#cb4-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-13"><a href="#cb4-13" aria-hidden="true" tabindex="-1"></a><span class="co">    Returns:</span></span>
+<span id="cb4-14"><a href="#cb4-14" aria-hidden="true" tabindex="-1"></a><span class="co">        list: Функция отображает изображение с обнаруженными ценами и возвращает список с определенными ценами</span></span>
+<span id="cb4-15"><a href="#cb4-15" aria-hidden="true" tabindex="-1"></a><span class="co">    &#39;&#39;&#39;</span>    </span>
+<span id="cb4-16"><a href="#cb4-16" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-17"><a href="#cb4-17" aria-hidden="true" tabindex="-1"></a>    image <span class="op">=</span> cv2.imread(img_dir)</span>
+<span id="cb4-18"><a href="#cb4-18" aria-hidden="true" tabindex="-1"></a>    res <span class="op">=</span> det_model(image)</span>
+<span id="cb4-19"><a href="#cb4-19" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb4-20"><a href="#cb4-20" aria-hidden="true" tabindex="-1"></a>    image_ocr <span class="op">=</span> cv2.imread(img_dir, cv2.IMREAD_GRAYSCALE)</span>
+<span id="cb4-21"><a href="#cb4-21" aria-hidden="true" tabindex="-1"></a>    _, binary_image <span class="op">=</span> cv2.threshold(image_ocr, <span class="dv">100</span>, <span class="dv">255</span>, cv2.THRESH_BINARY)</span>
+<span id="cb4-22"><a href="#cb4-22" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-23"><a href="#cb4-23" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-24"><a href="#cb4-24" aria-hidden="true" tabindex="-1"></a>    image_ocr <span class="op">=</span> cv2.equalizeHist(binary_image)</span>
+<span id="cb4-25"><a href="#cb4-25" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-26"><a href="#cb4-26" aria-hidden="true" tabindex="-1"></a>    prices <span class="op">=</span> []</span>
+<span id="cb4-27"><a href="#cb4-27" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-28"><a href="#cb4-28" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> result <span class="kw">in</span> res:</span>
+<span id="cb4-29"><a href="#cb4-29" aria-hidden="true" tabindex="-1"></a>        boxes <span class="op">=</span> result.boxes.xyxy.cpu().numpy()</span>
+<span id="cb4-30"><a href="#cb4-30" aria-hidden="true" tabindex="-1"></a>        <span class="cf">for</span> box <span class="kw">in</span> boxes:</span>
+<span id="cb4-31"><a href="#cb4-31" aria-hidden="true" tabindex="-1"></a>            x1, y1, x2, y2 <span class="op">=</span> <span class="bu">map</span>(<span class="bu">int</span>, box)</span>
+<span id="cb4-32"><a href="#cb4-32" aria-hidden="true" tabindex="-1"></a>            correct <span class="op">=</span> (x2<span class="op">-</span>x1)<span class="op">*</span><span class="fl">0.28</span></span>
+<span id="cb4-33"><a href="#cb4-33" aria-hidden="true" tabindex="-1"></a>            <span class="bu">print</span>(correct)</span>
+<span id="cb4-34"><a href="#cb4-34" aria-hidden="true" tabindex="-1"></a>            x2 <span class="op">=</span> <span class="bu">int</span>(x2<span class="op">-</span>correct)</span>
+<span id="cb4-35"><a href="#cb4-35" aria-hidden="true" tabindex="-1"></a>            crop <span class="op">=</span> image_ocr[y1:y2, x1:x2]</span>
+<span id="cb4-36"><a href="#cb4-36" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-37"><a href="#cb4-37" aria-hidden="true" tabindex="-1"></a>            <span class="co"># --------------------------------------------</span></span>
+<span id="cb4-38"><a href="#cb4-38" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-39"><a href="#cb4-39" aria-hidden="true" tabindex="-1"></a>            <span class="co"># plt.figure(figsize=(5, 5))</span></span>
+<span id="cb4-40"><a href="#cb4-40" aria-hidden="true" tabindex="-1"></a>            <span class="co"># plt.imshow(crop, cmap=&#39;gray&#39;)</span></span>
+<span id="cb4-41"><a href="#cb4-41" aria-hidden="true" tabindex="-1"></a>            <span class="co"># plt.title(&quot;Cropped Image&quot;)               # отображение обрезанной части картинки</span></span>
+<span id="cb4-42"><a href="#cb4-42" aria-hidden="true" tabindex="-1"></a>            <span class="co"># plt.axis(&#39;off&#39;)</span></span>
+<span id="cb4-43"><a href="#cb4-43" aria-hidden="true" tabindex="-1"></a>            <span class="co"># plt.show()</span></span>
+<span id="cb4-44"><a href="#cb4-44" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-45"><a href="#cb4-45" aria-hidden="true" tabindex="-1"></a>            <span class="co"># --------------------------------------------</span></span>
+<span id="cb4-46"><a href="#cb4-46" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-47"><a href="#cb4-47" aria-hidden="true" tabindex="-1"></a>            ocr_res <span class="op">=</span> ocr.readtext(crop, allowlist<span class="op">=</span><span class="st">&#39;0123456789&#39;</span>) <span class="co"># допускаем к распознаванию только цифры</span></span>
+<span id="cb4-48"><a href="#cb4-48" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-49"><a href="#cb4-49" aria-hidden="true" tabindex="-1"></a>            price <span class="op">=</span> <span class="va">None</span> </span>
+<span id="cb4-50"><a href="#cb4-50" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-51"><a href="#cb4-51" aria-hidden="true" tabindex="-1"></a>            <span class="cf">for</span> detection <span class="kw">in</span> ocr_res:</span>
+<span id="cb4-52"><a href="#cb4-52" aria-hidden="true" tabindex="-1"></a>                price <span class="op">=</span> detection[<span class="dv">1</span>]</span>
+<span id="cb4-53"><a href="#cb4-53" aria-hidden="true" tabindex="-1"></a>                confidence <span class="op">=</span> detection[<span class="dv">2</span>]</span>
+<span id="cb4-54"><a href="#cb4-54" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-55"><a href="#cb4-55" aria-hidden="true" tabindex="-1"></a>                match <span class="op">=</span> re.search(<span class="vs">r&#39;\d+[\.,]?\d*&#39;</span>, price)  <span class="co"># на всякий случай проверяем регуляркой</span></span>
+<span id="cb4-56"><a href="#cb4-56" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-57"><a href="#cb4-57" aria-hidden="true" tabindex="-1"></a>                <span class="cf">if</span> match:</span>
+<span id="cb4-58"><a href="#cb4-58" aria-hidden="true" tabindex="-1"></a>                    price <span class="op">=</span> match.group()</span>
+<span id="cb4-59"><a href="#cb4-59" aria-hidden="true" tabindex="-1"></a>                    <span class="bu">print</span>(<span class="ss">f&#39;Price: </span><span class="sc">{</span>price<span class="sc">}</span><span class="ch">\n</span><span class="ss">Confidence: </span><span class="sc">{</span>confidence<span class="sc">:.2f}</span><span class="ss">&#39;</span>)</span>
+<span id="cb4-60"><a href="#cb4-60" aria-hidden="true" tabindex="-1"></a>                    <span class="cf">break</span></span>
+<span id="cb4-61"><a href="#cb4-61" aria-hidden="true" tabindex="-1"></a>            <span class="cf">if</span> price <span class="kw">is</span> <span class="kw">not</span> <span class="va">None</span>:</span>
+<span id="cb4-62"><a href="#cb4-62" aria-hidden="true" tabindex="-1"></a>                cv2.rectangle(image, (x1,y1), (x2<span class="op">+</span><span class="bu">int</span>(correct),y2), (<span class="dv">255</span>, <span class="dv">97</span>, <span class="dv">0</span>), <span class="dv">2</span>)  <span class="co"># выделение изначального бокса</span></span>
+<span id="cb4-63"><a href="#cb4-63" aria-hidden="true" tabindex="-1"></a>                cv2.rectangle(image, (x1,y1), (x2,y2), (<span class="dv">97</span>, <span class="dv">255</span>, <span class="dv">0</span>), <span class="dv">2</span>)     <span class="co"># выделение инпута в ocr</span></span>
+<span id="cb4-64"><a href="#cb4-64" aria-hidden="true" tabindex="-1"></a>                cv2.putText(image, price <span class="op">+</span> <span class="st">&#39;rub&#39;</span>, (x1,y1<span class="op">-</span><span class="dv">10</span>), cv2.FONT_HERSHEY_SIMPLEX, <span class="fl">0.9</span>, (<span class="dv">255</span>, <span class="dv">97</span>, <span class="dv">0</span>), <span class="dv">2</span>)</span>
+<span id="cb4-65"><a href="#cb4-65" aria-hidden="true" tabindex="-1"></a>                prices.append(price)</span>
+<span id="cb4-66"><a href="#cb4-66" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-67"><a href="#cb4-67" aria-hidden="true" tabindex="-1"></a>    img_rgb <span class="op">=</span> cv2.cvtColor(image, cv2.COLOR_BGR2RGB)</span>
+<span id="cb4-68"><a href="#cb4-68" aria-hidden="true" tabindex="-1"></a>    pil_img <span class="op">=</span> Image.fromarray(img_rgb)</span>
+<span id="cb4-69"><a href="#cb4-69" aria-hidden="true" tabindex="-1"></a>    pil_img.show() </span>
+<span id="cb4-70"><a href="#cb4-70" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-71"><a href="#cb4-71" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> prices</span></code></pre></div>
+</div>
+<section id="1-нарисованные-ценники" class="cell markdown">
+<h2>1. Нарисованные ценники</h2>
+</section>
+<div class="cell code" data-execution_count="14">
+<div class="sourceCode" id="cb5"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="co"># список с путями к изображениям</span></span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>images <span class="op">=</span> [</span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>    <span class="vs">r&#39;D:\Helper\MLBazyak\homework\06_01\06_01_hw\hih\11.jpg&#39;</span>,</span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a>    <span class="vs">r&#39;D:\Helper\MLBazyak\homework\06_01\06_01_hw\hih\12.jpg&#39;</span>,</span>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a>    <span class="vs">r&#39;D:\Helper\MLBazyak\homework\06_01\06_01_hw\hih\13.jpg&#39;</span></span>
+<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a>          ]</span>
+<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-8"><a href="#cb5-8" aria-hidden="true" tabindex="-1"></a><span class="co"># проходимся по каждой фотографии</span></span>
+<span id="cb5-9"><a href="#cb5-9" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> image <span class="kw">in</span> images:</span>
+<span id="cb5-10"><a href="#cb5-10" aria-hidden="true" tabindex="-1"></a>    rec_price(det_model<span class="op">=</span>model, ocr<span class="op">=</span>ocr, img_dir<span class="op">=</span>image)</span>
+<span id="cb5-11"><a href="#cb5-11" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">&#39;--------------------------------------&#39;</span>)</span></code></pre></div>
+<div class="output stream stdout">
+<pre><code>
+0: 288x640 (no detections), 83.3ms
+Speed: 4.0ms preprocess, 83.3ms inference, 1.0ms postprocess per image at shape (1, 3, 288, 640)
+--------------------------------------
+
+0: 288x640 (no detections), 84.9ms
+Speed: 2.1ms preprocess, 84.9ms inference, 3.8ms postprocess per image at shape (1, 3, 288, 640)
+--------------------------------------
+
+0: 288x640 (no detections), 105.1ms
+Speed: 5.0ms preprocess, 105.1ms inference, 1.6ms postprocess per image at shape (1, 3, 288, 640)
+--------------------------------------
+</code></pre>
+</div>
+</div>
+<div class="cell markdown">
+<p><strong>Результат:</strong> <code>ни распознал ни одну</code></p>
+</div>
+<section id="2-paint-ценники" class="cell markdown">
+<h2>2. Paint-ценники</h2>
+</section>
+<div class="cell code" data-execution_count="17">
+<div class="sourceCode" id="cb7"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="co"># список с путями к изображениям</span></span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>images <span class="op">=</span> [</span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a>    <span class="vs">r&#39;D:\Helper\MLBazyak\homework\06_01\06_01_hw\hih\15.jpg&#39;</span>,</span>
+<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a>    <span class="vs">r&#39;D:\Helper\MLBazyak\homework\06_01\06_01_hw\hih\16.jpg&#39;</span>,</span>
+<span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a>    <span class="vs">r&#39;D:\Helper\MLBazyak\homework\06_01\06_01_hw\hih\17.jpg&#39;</span>,</span>
+<span id="cb7-6"><a href="#cb7-6" aria-hidden="true" tabindex="-1"></a>          ]</span>
+<span id="cb7-7"><a href="#cb7-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-8"><a href="#cb7-8" aria-hidden="true" tabindex="-1"></a><span class="co"># проходимся по каждой фотографии</span></span>
+<span id="cb7-9"><a href="#cb7-9" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> image <span class="kw">in</span> images:</span>
+<span id="cb7-10"><a href="#cb7-10" aria-hidden="true" tabindex="-1"></a>    rec_price(det_model<span class="op">=</span>YOLO(<span class="vs">r&#39;D:\Helper\MLBazyak\homework\06_01\06_01_hw\runs\detect\price_detection_v3\weights\best.pt&#39;</span>), ocr<span class="op">=</span>ocr, img_dir<span class="op">=</span>image)</span>
+<span id="cb7-11"><a href="#cb7-11" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">&#39;--------------------------------------&#39;</span>)</span></code></pre></div>
+<div class="output stream stdout">
+<pre><code>
+0: 352x640 1 price, 62.4ms
+Speed: 1.0ms preprocess, 62.4ms inference, 2.0ms postprocess per image at shape (1, 3, 352, 640)
+35.0
+Price: 682
+Confidence: 0.57
+--------------------------------------
+
+0: 384x640 1 price, 77.3ms
+Speed: 7.3ms preprocess, 77.3ms inference, 1.0ms postprocess per image at shape (1, 3, 384, 640)
+34.720000000000006
+Price: 688
+Confidence: 1.00
+--------------------------------------
+
+0: 320x640 (no detections), 124.6ms
+Speed: 3.7ms preprocess, 124.6ms inference, 0.7ms postprocess per image at shape (1, 3, 320, 640)
+--------------------------------------
+</code></pre>
+</div>
+</div>
+<div class="cell markdown">
+<p><strong>Результат:</strong> <code>распознал 2 из 3</code></p>
+<p><em>на старой версии модели</em></p>
+<p><img src="vertopal_7afa891626ea410188f53a6853ba3406/image.png"
+alt="image.png" /></p>
+</div>
+<section id="3-ценники-из-буфета" class="cell markdown">
+<h2>3. Ценники из буфета</h2>
+</section>
+<div class="cell code" data-execution_count="26">
+<div class="sourceCode" id="cb9"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="co"># список с путями к изображениям</span></span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a>images <span class="op">=</span> [</span>
+<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a>    <span class="vs">r&#39;D:\Helper\MLBazyak\homework\06_01\06_01_hw\hih\21.jpg&#39;</span>,</span>
+<span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a>    <span class="vs">r&#39;D:\Helper\MLBazyak\homework\06_01\06_01_hw\hih\22.jpg&#39;</span>,</span>
+<span id="cb9-5"><a href="#cb9-5" aria-hidden="true" tabindex="-1"></a>    <span class="vs">r&#39;D:\Helper\MLBazyak\homework\06_01\06_01_hw\hih\23.jpg&#39;</span>,</span>
+<span id="cb9-6"><a href="#cb9-6" aria-hidden="true" tabindex="-1"></a>          ]</span>
+<span id="cb9-7"><a href="#cb9-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-8"><a href="#cb9-8" aria-hidden="true" tabindex="-1"></a><span class="co"># проходимся по каждой фотографии</span></span>
+<span id="cb9-9"><a href="#cb9-9" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> image <span class="kw">in</span> images:</span>
+<span id="cb9-10"><a href="#cb9-10" aria-hidden="true" tabindex="-1"></a>    rec_price(det_model<span class="op">=</span>model, img_dir<span class="op">=</span>image)</span>
+<span id="cb9-11"><a href="#cb9-11" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">&#39;--------------------------------------&#39;</span>)</span></code></pre></div>
+<div class="output stream stdout">
+<pre><code>
+0: 288x640 (no detections), 87.4ms
+Speed: 4.6ms preprocess, 87.4ms inference, 0.0ms postprocess per image at shape (1, 3, 288, 640)
+--------------------------------------
+
+0: 320x640 (no detections), 75.4ms
+Speed: 3.2ms preprocess, 75.4ms inference, 1.0ms postprocess per image at shape (1, 3, 320, 640)
+--------------------------------------
+</code></pre>
+</div>
+</div>
+<div class="cell markdown">
+<p><strong>Результат:</strong> <code>ни распознал ни одну</code></p>
+</div>
+<section id="4-ценники-пятерочки-из-интернета" class="cell markdown">
+<h2>4. Ценники Пятерочки из Интернета</h2>
+</section>
+<div class="cell code" data-execution_count="5">
+<div class="sourceCode" id="cb11"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="co"># список с путями к изображениям</span></span>
+<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a>images <span class="op">=</span> [</span>
+<span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a>    <span class="vs">r&#39;D:\Helper\MLBazyak\homework\06_01\06_01_hw\hih\41.jfif&#39;</span>,</span>
+<span id="cb11-4"><a href="#cb11-4" aria-hidden="true" tabindex="-1"></a>    <span class="vs">r&#39;D:\Helper\MLBazyak\homework\06_01\06_01_hw\hih\42.jpg&#39;</span>,</span>
+<span id="cb11-5"><a href="#cb11-5" aria-hidden="true" tabindex="-1"></a>    <span class="vs">r&#39;D:\Helper\MLBazyak\homework\06_01\06_01_hw\hih\41.jpg&#39;</span>,</span>
+<span id="cb11-6"><a href="#cb11-6" aria-hidden="true" tabindex="-1"></a>          ]</span>
+<span id="cb11-7"><a href="#cb11-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-8"><a href="#cb11-8" aria-hidden="true" tabindex="-1"></a><span class="co"># проходимся по каждой фотографии</span></span>
+<span id="cb11-9"><a href="#cb11-9" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> image <span class="kw">in</span> images:</span>
+<span id="cb11-10"><a href="#cb11-10" aria-hidden="true" tabindex="-1"></a>    rec_price(det_model<span class="op">=</span>model, img_dir<span class="op">=</span>image)</span>
+<span id="cb11-11"><a href="#cb11-11" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">&#39;--------------------------------------&#39;</span>)</span></code></pre></div>
+<div class="output stream stdout">
+<pre><code>
+0: 480x640 5 prices, 108.8ms
+Speed: 7.9ms preprocess, 108.8ms inference, 1.2ms postprocess per image at shape (1, 3, 480, 640)
+63.28000000000001
+Price: 48
+Confidence: 1.00
+85.12
+Price: 16
+Confidence: 1.00
+63.56000000000001
+Price: 44
+Confidence: 1.00
+60.2
+Price: 16
+Confidence: 1.00
+71.68
+Price: 34
+Confidence: 0.69
+--------------------------------------
+
+0: 480x640 3 prices, 74.8ms
+Speed: 2.0ms preprocess, 74.8ms inference, 1.1ms postprocess per image at shape (1, 3, 480, 640)
+52.080000000000005
+Price: 179
+Confidence: 0.58
+36.400000000000006
+Price: 119
+Confidence: 0.99
+14.560000000000002
+--------------------------------------
+
+0: 480x640 2 prices, 109.0ms
+Speed: 3.9ms preprocess, 109.0ms inference, 2.0ms postprocess per image at shape (1, 3, 480, 640)
+134.96
+Price: 120
+Confidence: 1.00
+110.04
+Price: 115
+Confidence: 1.00
+--------------------------------------
+</code></pre>
+</div>
+</div>
+<div class="cell markdown">
+<p><strong>Результат: <code>определил 3 из 3</code></strong></p>
+<p><img src="vertopal_7afa891626ea410188f53a6853ba3406/image.png"
+alt="image.png" /> <img
+src="vertopal_7afa891626ea410188f53a6853ba3406/image-2.png"
+alt="image-2.png" /> <img
+src="vertopal_7afa891626ea410188f53a6853ba3406/image-3.png"
+alt="image-3.png" /></p>
+</div>
+<section id="5-ценники-магнита-из-интернета" class="cell markdown">
+<h2>5. Ценники Магнита из Интернета</h2>
+</section>
+<div class="cell code" data-execution_count="19">
+<div class="sourceCode" id="cb13"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="co"># список с путями к изображениям</span></span>
+<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a>images <span class="op">=</span> [</span>
+<span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a>    <span class="vs">r&#39;D:\Helper\MLBazyak\homework\06_01\06_01_hw\hih\51.jfif&#39;</span>,</span>
+<span id="cb13-4"><a href="#cb13-4" aria-hidden="true" tabindex="-1"></a>    <span class="vs">r&#39;D:\Helper\MLBazyak\homework\06_01\06_01_hw\hih\52.jpg&#39;</span>,</span>
+<span id="cb13-5"><a href="#cb13-5" aria-hidden="true" tabindex="-1"></a>    <span class="vs">r&#39;D:\Helper\MLBazyak\homework\06_01\06_01_hw\hih\53.jpg&#39;</span>,</span>
+<span id="cb13-6"><a href="#cb13-6" aria-hidden="true" tabindex="-1"></a>          ]</span>
+<span id="cb13-7"><a href="#cb13-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-8"><a href="#cb13-8" aria-hidden="true" tabindex="-1"></a><span class="co"># проходимся по каждой фотографии</span></span>
+<span id="cb13-9"><a href="#cb13-9" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> image <span class="kw">in</span> images:</span>
+<span id="cb13-10"><a href="#cb13-10" aria-hidden="true" tabindex="-1"></a>    rec_price(det_model<span class="op">=</span>model, img_dir<span class="op">=</span>image)</span>
+<span id="cb13-11"><a href="#cb13-11" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">&#39;--------------------------------------&#39;</span>)</span></code></pre></div>
+<div class="output stream stdout">
+<pre><code>
+</code></pre>
+</div>
+<div class="output stream stdout">
+<pre><code>0: 640x480 2 prices, 86.4ms
+Speed: 4.4ms preprocess, 86.4ms inference, 1.0ms postprocess per image at shape (1, 3, 640, 480)
+37.52
+Price: 913
+Confidence: 0.89
+44.24
+Price: 109
+Confidence: 1.00
+--------------------------------------
+
+0: 480x640 2 prices, 90.9ms
+Speed: 3.0ms preprocess, 90.9ms inference, 1.7ms postprocess per image at shape (1, 3, 480, 640)
+36.96
+Price: 541
+Confidence: 0.69
+35.0
+Price: 99
+Confidence: 1.00
+--------------------------------------
+
+0: 480x640 (no detections), 214.1ms
+Speed: 16.2ms preprocess, 214.1ms inference, 0.5ms postprocess per image at shape (1, 3, 480, 640)
+--------------------------------------
+</code></pre>
+</div>
+</div>
+<div class="cell markdown">
+<p><strong>Результат: <code>определил 3 из 3</code></strong></p>
+<p><img src="vertopal_7afa891626ea410188f53a6853ba3406/image.png"
+alt="image.png" /> <img
+src="vertopal_7afa891626ea410188f53a6853ba3406/image-2.png"
+alt="image-2.png" /></p>
+</div>
+<section id="6-ценники-из-тестового-набора-ч1" class="cell markdown">
+<h2>6. Ценники из тестового набора ч.1</h2>
+</section>
+<div class="cell code">
+<div class="sourceCode" id="cb16"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a><span class="co"># список с путями к изображениям</span></span>
+<span id="cb16-2"><a href="#cb16-2" aria-hidden="true" tabindex="-1"></a>images <span class="op">=</span> [</span>
+<span id="cb16-3"><a href="#cb16-3" aria-hidden="true" tabindex="-1"></a>    <span class="vs">r&#39;D:\Helper\MLBazyak\homework\06_01\06_01_hw\hih\61.jpg&#39;</span>,</span>
+<span id="cb16-4"><a href="#cb16-4" aria-hidden="true" tabindex="-1"></a>    <span class="vs">r&#39;D:\Helper\MLBazyak\homework\06_01\06_01_hw\hih\62.jpg&#39;</span>,</span>
+<span id="cb16-5"><a href="#cb16-5" aria-hidden="true" tabindex="-1"></a>    <span class="vs">r&#39;D:\Helper\MLBazyak\homework\06_01\06_01_hw\hih\63.jpg&#39;</span>,</span>
+<span id="cb16-6"><a href="#cb16-6" aria-hidden="true" tabindex="-1"></a>          ]</span>
+<span id="cb16-7"><a href="#cb16-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb16-8"><a href="#cb16-8" aria-hidden="true" tabindex="-1"></a><span class="co"># проходимся по каждой фотографии</span></span>
+<span id="cb16-9"><a href="#cb16-9" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> image <span class="kw">in</span> images:</span>
+<span id="cb16-10"><a href="#cb16-10" aria-hidden="true" tabindex="-1"></a>    rec_price(det_model<span class="op">=</span>model, img_dir<span class="op">=</span>image)</span>
+<span id="cb16-11"><a href="#cb16-11" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">&#39;--------------------------------------&#39;</span>)</span></code></pre></div>
+<div class="output stream stdout">
+<pre><code>
+</code></pre>
+</div>
+<div class="output stream stdout">
+<pre><code>0: 480x640 1 price, 86.1ms
+Speed: 4.0ms preprocess, 86.1ms inference, 2.0ms postprocess per image at shape (1, 3, 480, 640)
+71.4
+Price: 29
+Confidence: 0.67
+--------------------------------------
+
+0: 480x640 1 price, 70.8ms
+Speed: 1.9ms preprocess, 70.8ms inference, 1.1ms postprocess per image at shape (1, 3, 480, 640)
+54.32000000000001
+--------------------------------------
+
+0: 480x640 2 prices, 123.4ms
+Speed: 2.3ms preprocess, 123.4ms inference, 2.5ms postprocess per image at shape (1, 3, 480, 640)
+46.2
+Price: 499
+Confidence: 0.98
+39.480000000000004
+Price: 319
+Confidence: 1.00
+--------------------------------------
+</code></pre>
+</div>
+</div>
+<div class="cell markdown">
+<p><strong>Результат: <code>определил 2 из 3</code></strong></p>
+<p><img src="vertopal_7afa891626ea410188f53a6853ba3406/image.png"
+alt="image.png" /> <img
+src="vertopal_7afa891626ea410188f53a6853ba3406/image-2.png"
+alt="image-2.png" /> <img
+src="vertopal_7afa891626ea410188f53a6853ba3406/image-3.png"
+alt="image-3.png" /></p>
+</div>
+<section id="7-ценники-из-тестового-набора-ч2" class="cell markdown">
+<h2>7. Ценники из тестового набора ч.2</h2>
+</section>
+<div class="cell code" data-execution_count="20">
+<div class="sourceCode" id="cb19"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb19-2"><a href="#cb19-2" aria-hidden="true" tabindex="-1"></a><span class="co"># список с путями к изображениям</span></span>
+<span id="cb19-3"><a href="#cb19-3" aria-hidden="true" tabindex="-1"></a>images <span class="op">=</span> [</span>
+<span id="cb19-4"><a href="#cb19-4" aria-hidden="true" tabindex="-1"></a>    <span class="vs">r&#39;D:\Helper\MLBazyak\homework\06_01\06_01_hw\hih\77.jpg&#39;</span>,</span>
+<span id="cb19-5"><a href="#cb19-5" aria-hidden="true" tabindex="-1"></a>    <span class="vs">r&#39;D:\Helper\MLBazyak\homework\06_01\06_01_hw\hih\71.jpg&#39;</span>,</span>
+<span id="cb19-6"><a href="#cb19-6" aria-hidden="true" tabindex="-1"></a>    <span class="vs">r&#39;D:\Helper\MLBazyak\homework\06_01\06_01_hw\hih\72.jpg&#39;</span>,</span>
+<span id="cb19-7"><a href="#cb19-7" aria-hidden="true" tabindex="-1"></a>    <span class="vs">r&#39;D:\Helper\MLBazyak\homework\06_01\06_01_hw\hih\73.jpg&#39;</span>,</span>
+<span id="cb19-8"><a href="#cb19-8" aria-hidden="true" tabindex="-1"></a>          ]</span>
+<span id="cb19-9"><a href="#cb19-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb19-10"><a href="#cb19-10" aria-hidden="true" tabindex="-1"></a><span class="co"># проходимся по каждой фотографии</span></span>
+<span id="cb19-11"><a href="#cb19-11" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> image <span class="kw">in</span> images:</span>
+<span id="cb19-12"><a href="#cb19-12" aria-hidden="true" tabindex="-1"></a>    rec_price(det_model<span class="op">=</span>model, img_dir<span class="op">=</span>image)</span>
+<span id="cb19-13"><a href="#cb19-13" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">&#39;--------------------------------------&#39;</span>)</span></code></pre></div>
+<div class="output stream stdout">
+<pre><code>
+0: 640x480 (no detections), 130.3ms
+Speed: 16.0ms preprocess, 130.3ms inference, 2.6ms postprocess per image at shape (1, 3, 640, 480)
+--------------------------------------
+
+0: 480x640 1 price, 85.5ms
+Speed: 7.2ms preprocess, 85.5ms inference, 4.3ms postprocess per image at shape (1, 3, 480, 640)
+37.52
+--------------------------------------
+
+0: 480x640 1 price, 212.1ms
+Speed: 5.4ms preprocess, 212.1ms inference, 7.2ms postprocess per image at shape (1, 3, 480, 640)
+99.68
+Price: 279
+Confidence: 0.98
+--------------------------------------
+
+0: 480x640 3 prices, 710.1ms
+Speed: 17.0ms preprocess, 710.1ms inference, 2.0ms postprocess per image at shape (1, 3, 480, 640)
+47.040000000000006
+Price: 32
+Confidence: 0.99
+43.68000000000001
+Price: 32
+Confidence: 0.99
+32.760000000000005
+Price: 82
+Confidence: 0.77
+--------------------------------------
+</code></pre>
+</div>
+</div>
+<div class="cell markdown">
+<p><strong>Результат: <code>2 из 3</code></strong></p>
+<p><img src="vertopal_7afa891626ea410188f53a6853ba3406/image-4.png"
+alt="image-4.png" /> <img
+src="vertopal_7afa891626ea410188f53a6853ba3406/image-5.png"
+alt="image-5.png" /> <img
+src="vertopal_7afa891626ea410188f53a6853ba3406/image.png"
+alt="image.png" /></p>
+</div>
+<section id="рефлексия" class="cell markdown">
+<h2>Рефлексия</h2>
+</section>
+<div class="cell markdown">
+<ul>
+<li>результат выше среднего, но модели с большим кол-вом эпох хуже
+определяют различные ценники под углом или наклоном</li>
+<li>можно попробовать объединить 3, 10 и 20 эпошные модели в ансамбль, и
+определять лучший результат голосованием</li>
+</ul>
+</div>
+<div class="cell markdown">
+
+</div>
+</body>
+</html>
