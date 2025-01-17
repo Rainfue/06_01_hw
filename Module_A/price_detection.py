@@ -16,7 +16,7 @@ from re import search
 #-----------------------------------------------------------------
 # Инициализация дефолтных аргументов функции
 # модель детекции
-model = YOLO(r'D:\Helper\MLBazyak\homework\06_01\06_01_hw\Helps\runs\detect\price_detection_v42\weights\best.pt')
+model = YOLO(r'D:\Helper\MLBazyak\homework\06_01\06_01_hw\Helps\runs\detect\price_detection_v3\weights\best.pt')
 
 # модель распознавания
 ocr = easyocr.Reader(['en', 'ru'])
@@ -79,10 +79,7 @@ def rec_price(det_model: YOLO = model,
     
     # а также создаем отдельное черно-белое контрастное фото, для более точного распознавания цены OCR моделью
     image_ocr = cv2.imread(img_dir, cv2.IMREAD_GRAYSCALE)
-    _, binary_image = cv2.threshold(image_ocr, 100, 255, cv2.THRESH_BINARY)
 
-
-    image_ocr = cv2.equalizeHist(binary_image)
 
     # список, куда будут сохраняться цены с изображения
     prices = []
