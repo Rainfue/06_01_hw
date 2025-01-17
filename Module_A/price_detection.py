@@ -14,7 +14,7 @@ import easyocr
 from re import search
 
 #-----------------------------------------------------------------
-# Инициализация моделей
+# Инициализация дефолтных аргументов функции
 # модель детекции
 model = YOLO(r'D:\Helper\MLBazyak\homework\06_01\06_01_hw\Helps\runs\detect\price_detection_v42\weights\best.pt')
 
@@ -40,7 +40,7 @@ def draw_cross(image):
 
     height, width = image.shape[:2]
     color = (255,0,0) # красный цвет креста
-    thickness = 100 # толщина линий креста
+    thickness = 50 # толщина линий креста
 
     # рисуем крест
     cv2.line(image, (0,0), (width,height), color, thickness)
@@ -63,41 +63,50 @@ def rec_price(det_model: YOLO = model,
     Returns:
         list: Функция отображает изображение с обнаруженными ценами и возвращает список с определенными ценами
     '''    
+    # проверки на правильный тип данных в модели
+    if not isinstance(det_model,YOLO):                                   
+        raise TypeError('det_model должена быть объектом YOLO')
 
+    if not isinstance(ocr, easyocr.Reader):
+        raise TypeError('ocr должена быть объектом easyocr.Reader')
+
+    if not isinstance(img_dir,str):
+        raise TypeError('img_dir должен быть путем к фотографии типа str')
+
+    # загружаем фотографии для модели детекции
     image = cv2.imread(img_dir)
     res = det_model(image)
     
+    # а также создаем отдельное черно-белое контрастное фото, для более точного распознавания цены OCR моделью
     image_ocr = cv2.imread(img_dir, cv2.IMREAD_GRAYSCALE)
     _, binary_image = cv2.threshold(image_ocr, 100, 255, cv2.THRESH_BINARY)
 
 
     image_ocr = cv2.equalizeHist(binary_image)
 
+    # список, куда будут сохраняться цены с изображения
     prices = []
 
+    # проходимся по результатами модели
     for result in res:
         boxes = result.boxes.xyxy.cpu().numpy()
         for box in boxes:
+            # находим x и y боксов, которые определила модель детекции
             x1, y1, x2, y2 = map(int, box)
+
+            # корректируем x2 для более точного определения цены (не захватывая копейки)
             correct = (x2-x1)*0.28
-            print(correct)
             x2 = int(x2-correct)
+
+            # обрезаем фотографию по найденным иксам
             crop = image_ocr[y1:y2, x1:x2]
 
-            # --------------------------------------------
-
-            # plt.figure(figsize=(5, 5))
-            # plt.imshow(crop, cmap='gray')
-            # plt.title("Cropped Image")               # отображение обрезанной части картинки
-            # plt.axis('off')
-            # plt.show()
-
-            # --------------------------------------------
-
+            # читаем обрезанную фотографию OCR моделью
             ocr_res = ocr.readtext(crop, allowlist='0123456789')
 
             price = None 
 
+            # выводим логи в виде цены и уверенности в ней
             for detection in ocr_res:
                 price = detection[1]
                 confidence = detection[2]
@@ -108,6 +117,7 @@ def rec_price(det_model: YOLO = model,
                     price = match.group()
                     print(f'Price: {price}\nConfidence: {confidence:.2f}')
                     break
+            # для каждой детекции, рисуем bb's и сохраняем распознанную цену
             if price is not None:
                 cv2.rectangle(image, (x1,y1), (x2+int(correct),y2), (255, 97, 0), 2)  # выделение изначального бокса
                 cv2.rectangle(image, (x1,y1), (x2,y2), (97, 255, 0), 2)     # выделение инпута в ocr
@@ -116,16 +126,20 @@ def rec_price(det_model: YOLO = model,
 
     img_rgb = cv2.cvtColor(image, cv2.COLOR_BGR2RGB)
     
+    # если список с ценами остался пустым, значит применяем функцию с рисованием креста
     if not prices:
         img_rgb = draw_cross(img_rgb)
 
+    # возвращаем rgb изображение и список с ценами
     return img_rgb, prices
 
 #-----------------------------------------------------------------
 # API
+# тайтл к странице приложения
 st.title('Распознавание цены товара с фотографии')
 
-with open(r'D:\Helper\MLBazyak\homework\06_01\06_01_hw\Module_V\presentation.pdf', 'rb') as file:
+# кнопка для скачивания справки по приложению
+with open(r'D:\Helper\MLBazyak\homework\06_01\06_01_hw\Module_A\Documentation2API.pdf', 'rb') as file:
     st.download_button(
         label='Справка',
         data=file,
@@ -133,8 +147,10 @@ with open(r'D:\Helper\MLBazyak\homework\06_01\06_01_hw\Module_V\presentation.pdf
         mime='application/pdf'
     )
 
+# форма для загрузки фотографии
 uploaded_file = st.file_uploader('Chose a file:', type=['jpg', 'jpeg', 'png'])
 
+# если файл загружен, то обрабатываем его нашими функциями
 if uploaded_file is not None:
     # сохраняем загруженное изображение
     with open('temp_image.jpg', 'wb') as f:
@@ -142,13 +158,17 @@ if uploaded_file is not None:
 
     img_rgb, prices = rec_price(img_dir='temp_image.jpg')
 
+    # выводим изображение с найденными (или не найденными) ценниками
     st.image(img_rgb,
              caption='Обнаруженные ценники',
              use_container_width=True
              )
+    # если есть цены, то выводим их
     if prices:
         st.write('Найденные цены: ')
         for price in prices:
             st.write(f'- {price} руб.')
+            
+    # если цен нет, то выводим это
     else:
-        st.write('Ценники не найден')
+        st.write('Ценники не найдены')
