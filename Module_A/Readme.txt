@@ -5,6 +5,10 @@
         ├── Readme.txt        
         ├── Report_M1.html          
         └── Report_M1.ipynb
+        └── Documentation2API.docx 
+        └── Documentation2API.pdf 
+        └── price_detection.py
+        └── test_price_detection.py
     └── Helps/                
         ├── classes.txt
         ├── runs/
